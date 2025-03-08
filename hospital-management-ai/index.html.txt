@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Hospital Data</h1>
+
+        <h2>Patients Data</h2>
+        {{ patients_table|safe }}
+
+        <h2>Doctors Data</h2>
+        {{ doctors_table|safe }}
+
+        <h2>Anomalies Detected</h2>
+        {{ anomalies_table|safe }}  <!-- Added section for anomalies -->
+    </div>
+</body>
+</html>
